@@ -21,7 +21,7 @@ body {
 
 .flexible-image {
   background-image: url("../images/TSU_IMG_2449.jpg");
-  height: 500px;
+  height: 250px;
   max-width: 100%;
   background-size: cover;
   /*background-position: center center;*/
@@ -29,7 +29,7 @@ body {
 
 @media (min-width: 769px) {
     .flexible-image {
-    height: 250px;
+    height: 500px;
 }
 
 }
@@ -54,14 +54,19 @@ section h2 {
 #middle .container {
     display: -webkit-flex;
     display:         flex;
-    justify-content: space-between;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    justify-content: space-around;
+    -webkit-flex-direction: column;
+    flex-direction: column;
  }
  
  @media (min-width: 769px) {
- 
-   
+   #middle .container{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+   -webkit-flex-direction: row;
+    flex-direction: row;
+   }
  }
 
 #middle .texts-box {
