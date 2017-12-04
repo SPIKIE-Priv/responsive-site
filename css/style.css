@@ -7,10 +7,7 @@ html {
 
 body {
   color: #4c4c4c;
-  font-size: 1.4rem;
-  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   line-height: 1.6;
-  letter-spacing: 0.1em;
   background-color: #fdfcf6; }
 
 
@@ -21,61 +18,65 @@ body {
 
 /* Layout
 ------------------------------------------------------------*/
-.block-center, section .container, #middle i {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
-/* Font
-------------------------------------------------------------*/
-.abel, section h2, #middle h3, #bottom .bottom-box a .button-readmore {
-  font-family: 'Abel', sans-serif; }
+.flexible-image {
+  background-image: url("../images/TSU_IMG_2449.jpg");
+  height: 500px;
+  max-width: 100%;
+  background-size: cover;
+  /*background-position: center center;*/
+}
 
-.uppercase, section h2, #middle h3, #bottom .bottom-box a .button-readmore {
-  text-transform: uppercase; }
+@media (min-width: 769px) {
+    .flexible-image {
+    height: 250px;
+}
+
+}
 
 /* Contents
 ------------------------------------------------------------*/
 section {
   padding: 60px 0; }
-section .container {
-  width: 100%; }
+
 section h2 {
   font-size: 3.2rem; }
 
 #middle {
-  background-color: #bea300; }
-  #middle .container {
-    display: -webkit-flex;
-    display: flex;
-    justify-content: space-between;
-    -webkit-flex-direction: column;
-  flex-direction: column; }
-  #middle h2 {
-    color: #fdfcf6;
-    margin-bottom: 60px; }
-  #middle .texts-box {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-flex: 1;
-    flex: 1;
-    margin: 10px 0;
-    padding: 20px;
-    background-color: #fdfcf6;
-    }
- 
-  #middle h3 {
-    color: #14c0c9;
-    margin-bottom: 10px;
-    font-size: 2.4rem;
-    font-weight: bold; }
+  background-color: #bea300; 
+  
+}
+#middle h2 {
+  color: #fdfcf6;
+  margin-bottom: 60px;
+}
 
-#bottom {
-  padding-bottom: 0; }
+#middle .container {
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+ }
+ 
+ @media (min-width: 769px) {
+ 
+   
+ }
+
+#middle .texts-box {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-flex: 1;
+          flex: 1;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #fdfcf6;
+  padding: 20px;
+  margin: 10px 10px 10px 10px;
+}
 
 #bottom  .button-readmore {
   margin: auto;
@@ -89,30 +90,8 @@ section h2 {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 1rem; }     
+  font-size: 1rem; 
+}
 
-/* Footer
------------------------------------------------------------*/
-footer {
-  background-color: #fdfcf6;
-  padding: 10px 0;
-  text-align: center;
-  color: #FFF; }
 
-@media (min-width: 769px) {
-   /* Header
-  ------------------------------------------------------------*/
-  #middle .container {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    justify-content: space-between; }
-  #middle .texts-box {
-    margin: 0 10px; }
-
-  #bottom .bottom-box {
-    width: 33.33333%; }
-  #bottom .bottom-box a{
-    display: none; }
-
- }
 
